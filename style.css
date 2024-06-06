@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color:#2b3d83;
+    --accent-color:#ffad00;
+    --primary-text-color:#000000;
+    --secondary-text-color:#f4edd3;
+    --ternary-text-color: var(--primary-color);
+    --primary-background-color:#fff;
+    --secondary-background-color:#fff0f0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+header{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-container{
+    display: flex;
+    width: 100vw;
+    max-width: 600px;
+    max-height: 150px ;
+    aspect-ratio: 4/1;
+    padding: 1rem;
+    gap: 1rem; 
+}
+.logo-container{
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.logo{
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+.txt{
+    width: auto;
+    display: grid;
+    font-family: 'Poppins','sans-serif';
+    flex-shrink: 1;
+}
+.txt>*,.txt>*>*{
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+.mes{
+    /* line-height: 1; */
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: var(--primary-color);
+}
+
+.name{
+    line-height: 1;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-wrap: nowrap;
+}
+.autonomous{
+    color: var(--primary-color);
+    font-size: 0.8rem;
+    /* line-height: 0.7; */
+}
+.tagline{
+    /* line-height: 0.5; */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--accent-color);
+}
+.university{
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+.naac{
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+@media (max-width:600px) {
+    .logo-container{
+        width: 25%;
+    }
+    .header-container{
+        padding:3vw;
+        gap: 3vw;
+        aspect-ratio: auto;
+    }
+    .mes{
+        font-size:2.1vw;
+    }
+    
+    .name{
+        font-size: 4.1vw;
+    }
+    .autonomous{
+        font-size:2.1vw;    
+    }
+    .tagline{      
+        font-size: 3vw;
+    }
+    .university{
+        font-size: 2vw;
+    }
+    .naac{
+        font-size: 2vw;
+    }
+        
+}
